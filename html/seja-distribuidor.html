@@ -25,111 +25,47 @@
     </header>
     <main>
       <div>
-        <!--  ----------------------------------------------------------------------  -->
-        <!--  NOTA: Adicione o seguinte elemento <META> à sua página <HEAD>.  Se      -->
-        <!--  necessário, modifique o parâmetro charset para especificar o conjunto   -->
-        <!--  de caracteres de sua página HTML.                                       -->
-        <!--  ----------------------------------------------------------------------  -->
+       <!--  ----------------------------------------------------------------------  -->
+<!--  NOTA: Adicione o seguinte elemento <META> à sua página <HEAD>.  Se      -->
+<!--  necessário, modifique o parâmetro charset para especificar o conjunto   -->
+<!--  de caracteres de sua página HTML.                                       -->
+<!--  ----------------------------------------------------------------------  -->
 
-        <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
 
-        <!--  ----------------------------------------------------------------------  -->
-        <!--  NOTA: Adicione o elemento <FORM> a seguir à sua página.                 -->
-        <!--  ----------------------------------------------------------------------  -->
-
-        <form
-          action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8"
-          method="POST"
-        >
-        <input type=hidden name="oid" value="00D8Z000001uTvy">
-        <input type=hidden name="retURL" value="http://galemagalhaes.github.io/site2/html/agradec.html">
-
-          <!--  ----------------------------------------------------------------------  -->
-          <!--  NOTA: Estes campos são elementos de depuração opcionais. Remova o       -->
-          <!--  comentário dessas linhas se quiser testar no modo de depuração.         -->
-          <!--  <input type="hidden" name="debug" value=1>                              -->
-          <!--  <input type="hidden" name="debugEmail"                                  -->
-          <!--  value="kevin_horimi@hotmail.com">                                       -->
-          <!--  ----------------------------------------------------------------------  -->
-
-          <label for="first_name">Primeiro Nome</label
-          ><input
-            id="first_name"
-            maxlength="40"
-            name="first_name"
-            size="20"
-            type="text"
-            required
-          /><br />
-
-          <label for="last_name">Sobrenome</label
-          ><input
-            id="last_name"
-            maxlength="80"
-            name="last_name"
-            size="20"
-            type="text"
-            required
-          /> <br>
-
-          <label for="phone">Telefone</label
-          ><input
-            id="phone"
-            maxlength="40"
-            name="phone"
-            size="20"
-            type="text"
-            required
-          /> <br>
-
-          <label for="email">Email</label
-          ><input
-            id="email"
-            maxlength="80"
-            name="email"
-            size="20"
-            type="text"
-          /> <br>
-
-          <label for="company">Empresa</label
-          ><input
-            id="company"
-            maxlength="40"
-            name="company"
-            size="20"
-            type="text"
-          /> <br>
-
-          <label for="city">Cidade</label
-          ><input
-            id="city"
-            maxlength="40"
-            name="city"
-            size="20"
-            type="text"
-          /> <br>
-
-          <label for="state">Estado/província</label
-          ><input
-            id="state"
-            maxlength="20"
-            name="state"
-            size="20"
-            type="text"
-          /> <br>
-          <!-- <label for="00D8Z000001uTvy">Tipo de Comércio</label>
-          <select
-            id="00D8Z000001uTvy"
-            name="00D8Z000001uTvy"
-            title="Tipo de Comércio"
-          >
-            <option value="">-- Nenhum --</option>
-            <option value="Bar">Bar</option>
-            <option value="Supermercado">Supermercado</option></select
-          ><br> -->
-
-          <input type="submit" name="submit" class="button" onclick={handleReset()}/>
-        </form>
+  <!--  ----------------------------------------------------------------------  -->
+  <!--  NOTA: Adicione o elemento <FORM> a seguir à sua página.                 -->
+  <!--  ----------------------------------------------------------------------  -->
+  
+  <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+  
+  <input type=hidden name="oid" value="00D8Z000001uTvy">
+  <input type=hidden name="retURL" value="http://galemagalhaes.github.io/site2/html/agradec.html">
+  
+  <!--  ----------------------------------------------------------------------  -->
+  <!--  NOTA: Estes campos são elementos de depuração opcionais. Remova o       -->
+  <!--  comentário dessas linhas se quiser testar no modo de depuração.         -->
+  <!--  <input type="hidden" name="debug" value=1>                              -->
+  <!--  <input type="hidden" name="debugEmail"                                  -->
+  <!--  value="g.alemagalhaes@gmail.com">                                       -->
+  <!--  ----------------------------------------------------------------------  -->
+  
+  <label for="first_name">Primeiro Nome</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" /><br>
+  
+  <label for="last_name">Sobrenome</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br>
+  
+  <label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+  
+  <label for="company">Empresa</label><input  id="company" maxlength="40" name="company" size="20" type="text" /><br>
+  
+  <label for="city">Cidade</label><input  id="city" maxlength="40" name="city" size="20" type="text" /><br>
+  
+  <label for="state">Estado/província</label><input  id="state" maxlength="20" name="state" size="20" type="text" /><br>
+  
+  <input type="submit" name="submit">
+  
+  </form>
+  
       </div>
     </main>
     <footer>
