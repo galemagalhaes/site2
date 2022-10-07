@@ -1,0 +1,223 @@
+/* A - #704F15
+B - #F2C577
+C - #F0A92E
+D - #705B37
+E - #BD8424 */
+*{
+  box-sizing: border-box;
+}
+body {
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  min-height: 100vh;
+  flex-direction: column; */
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #303030  ;  
+}
+.carrosel {
+  display: flex;
+  box-shadow: 2px 2px 4px black;
+  overflow: hidden;
+  height: 500px;
+  width: 500px;
+}
+
+.container {
+  display: flex;
+  width: 50%;
+  position: inherit;
+  transition: transform 0.5s ease-in-out;
+  transform: translateX(-50%) translateY(-50%) scale(.8)
+  /* transition: width 2s; */
+  
+  /* transform: translateX(0); */
+}
+.container img {
+  object-fit: cover;
+  height: 500px;
+  width: 500px;
+
+}
+h1, h2, h3 {
+  text-align: center;
+}
+header {
+  display: flex;
+  width: 100%;
+  height: 25vh;
+  background-image: url("../img/madeira.jpg");
+  background-repeat: repeat-x;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;  
+}
+.img-header {
+display: flex;
+width: 18%;
+max-height: 90%;
+margin: auto;
+}
+.links-header{
+  display: flex;
+  flex-direction: row;
+  text-align:end;
+  width: 80%;
+  margin: auto;
+  justify-content: space-around; 
+}
+a {
+  display: flex;
+  flex-direction: row;
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+header a {
+  font-weight: 900;
+  font-size: large;  
+  -webkit-text-stroke: #ffffff 0.5px;
+}
+a:hover {
+  color: #704F15
+}
+.logo {
+  display: flex;
+  width: 100%;
+}
+.banner {
+  display: flex;
+  width: 100%;
+}
+.banner img {
+  width: 100%;
+}
+/* main {
+  opacity: 0.5;
+} */
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 30px auto;
+  justify-content: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+}
+form h1 {
+  color: #ffffff;
+  font-size: 2rem;
+  margin-bottom: 15px;
+  align-items: flex-start;
+}
+input, select, textarea {
+  display: flex;
+  background-color: #fff ;
+  border: none;
+  border-radius:  8px 8px 0px;
+  width: 30%;
+  margin: auto;  
+}
+input, select {
+  height: 4vh;
+}
+label {
+  display: flex;
+  margin: auto;
+  width: 30%;
+  color: #F2C577;
+}
+.quem-somos {
+  width: 60%; 
+  color: #704F15; 
+  background-color: #Fff;
+  margin: auto;
+}
+.quem-somos div {
+  display: flex;
+  flex-direction: column;
+  margin: 12% auto;
+}
+.produtos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: auto;
+}
+.produtos div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 3vw;
+}
+.produtos img {
+  width: 25%;
+  margin: 3vw;
+}
+.produtos p, .produtos h3, .produtos h1 {
+  display: flex;
+  text-align: justify;
+  align-items: center; 
+  color:#F0A92E;  
+}
+.produtos h1 {
+  margin-top: 10vh;
+  font-size: large;
+}
+.button {
+  display: flex;
+  margin: 2vh auto;
+  width: 10%;
+  height: 4vh;
+  background-color: #ffffff;
+  border: none;  
+  border-radius: 30px;
+  color: #704F15;
+  font-weight: 600;
+  text-align: center;
+  justify-content: center;
+}
+footer {
+  display:flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #705B37;
+  /* font-size: small; */
+  /* margin-top: 10vh; */
+}
+.footer-div1 {
+  display: flex;
+  flex-direction: column;
+  height: 20vh;
+  justify-content: center;
+  /* margin: auto; */
+}
+footer p {
+  margin: 1vh auto;
+  color: #F2C577;
+  font-size: 12px;
+}
+
+.footer-div2 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: #704F15;
+  border-top: #704F15 solid 12px;  
+  border-bottom: #704F15 solid 12px;  
+}
+.footer-div2 a {
+  display: inline-block;
+  flex-direction: row;
+  font-weight: 400;
+  color: #F2C577;
+}
+.body-quem-somos {
+  background-image: url(../img/Fabrica-Proa-Cervejaria3.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 0% 100%; 
+}

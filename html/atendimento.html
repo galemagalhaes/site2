@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../script.js" defer></script>
+    <title>Contato - Cervejaria Alpes</title>
+  </head>
+  <body>
+    <header>
+      <div class="img-header">
+        <img src="../img/logo-paleta3.png" alt="" class="logo" />
+      </div>
+
+      <div class="links-header">
+        <a href="./index.html">Home</a>
+        <a href="./quem-somos.html">Quem somos</a>
+        <a href="./produtos.html">Produtos</a>
+        <a href="./seja-distribuidor.html">Seja um Distribuidor</a>
+        <a href="./atendimento.html">Atendimento ao Cliente</a>
+      </div>
+    </header>
+    <main>
+      <div>
+        <form
+          action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8"
+          method="POST"
+        >
+          <input type="hidden" name="orgid" value="00D8Z000001uTvy" />
+          <input type="hidden" name="retURL" value="http://" />
+
+          <h1>Fale Conosco</h1>
+          <label class="label" for="name">Nome do Contato</label>
+          <input type="text" id="name" name="name" maxlength="80" size="20" />
+          <br />
+
+          <label for="company">Empresa</label>
+          <input
+            type="text"
+            id="company"
+            name="company"
+            maxlength="80"
+            size="20"
+          />
+          <br />
+
+          <label for="phone">Telefone</label>
+          <input type="phone" id="phone" name="phone" /> <br />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" /> <br />
+
+          <label for="subject">Assunto</label>
+          <input type="text" id="subject" name="subject" /> <br />
+
+          <!-- <label for="type">Tipo de comércio</label>
+          <select id="type" name="type">
+            <option value="">--Nenhum--</option>
+            <option value="Bar">Bar</option>
+            <option value="Supermercado">Supermercado</option>
+          </select> <br> -->
+
+          <!-- <label for="00N3t00000JVK4U">Produto</label>
+          <select id="00N3t00000JVK4U" name="00N3t00000JVK4U" title="Product">
+            <option value="">--Nenhum--</option>
+            <option value="Cerveja Lauterbrunnen">Cerveja Lauterbrunnen</option>
+            <option value="Cerveja Kandersteg">Cerveja Kandersteg</option>
+            <option value="Cerveja Adelboden">Cerveja Adelboden</option>
+            <option value="Cerveja Interlaken">Cerveja Interlaken</option>
+            <option value="Cerveja Lucerna">Cerveja Lucerna</option>
+            <option value="Cerveja Montreux">Cerveja Montreux</option>
+          </select> <br> -->
+
+          <!-- <label for="reason">Motivo do Caso</label>
+          <select id="reason" name="reason">
+            <option value="">--Nenhum--</option>
+            <option value="Atraso na entrega">Atraso na entrega</option>
+            <option value="Reclamação do atendimento">
+              Reclamação do atendimento
+            </option>
+            <option value="Produto danificado">Produto danificado</option>
+            <option value="Outros">Outros</option>
+          </select> <br> -->
+
+          <label for="priority">Prioridade</label>
+          <select id="priority" name="priority">
+            <option value="">--Nenhum--</option>
+            <option value="High">High</option>
+            <option value="Medium">Medium</option>
+            <option value="Low">Low</option>
+          </select>
+          <br />
+
+          <label for="description">Descrição</label>
+          <textarea
+            name="description"
+            id="description"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <br />
+
+          <input
+            type="submit"
+            name="submit"
+            class="button"
+            onclick="{handleReset()}"
+          />
+        </form>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-div1">
+        <p>Endereço</p>
+        <p>Telefone</p>
+        <p>CNPJ</p>
+      </div>
+      <div class="footer-div2">
+        <p>2022 - Todos os direitos reservados.</p>
+        <p>
+          Aprecie com moderação. VENDA E CONSUMO PROIBIDOS PARA MENORES DE 18
+          ANOS. SE BEBER NÃO DIRIJA
+        </p>
+        <p>
+          <a href="#">Política de Privacidade</a> |
+          <a href="#">Política de Cookies</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
